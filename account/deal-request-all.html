@@ -48,52 +48,58 @@
     </header> <!-- END OF NAVBAR -->
 
 
-    <!-- LOGIN -->
-    <div class="container">
-        <div class="columns">
-            <div class="column" style="margin: 50px auto;">
-                <div class="card">
-                    <header class="card-header">
-                        <p class="card-header-title">Create a free account</p>
-                    </header>
-                    <div class="card-content">
-                        <div class="field">
-                            <label class="label">First Name</label>
-                            <div class="control">
-                              <input class="input" type="text" placeholder="First name">
+    <!-- CUSTOMER DASHBOARD -->
+    <div class="container" style="margin: 40px auto; padding: 20px auto;">
+        <div class="card">
+            <div class="columns">
+                <div class="column is-one-quarter"><!-- LEFT Column -->
+                    <aside class="menu">
+                        <div class="has-text-centered">
+                            <div class="tile">
+                                <figure class="image is-128x128" style="margin: 0 auto;">
+                                    <img class="is-rounded" src="https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg">
+                                </figure>
                             </div>
+                            <span>yourname@example.com</span> <br>
+                            <span class="tag is-warning"><i class="fas fa-medal"></i>2500</span>
                         </div>
-                        <div class="field">
-                            <label class="label">Last Name</label>
-                            <div class="control">
-                              <input class="input" type="text" placeholder="Last name">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label">Email</label>
-                            <p class="control">
-                                <input class="input" type="email" placeholder="Email Address">
-                            </p>
-                        </div>
-                        <div class="field">
-                            <label class="label">Password</label>
-                            <p class="control">
-                                <input class="input" type="password" placeholder="Password">
-                            </p>
-                        </div>
-                        <div class="is-size-7" style="margin-bottom: 12px;">By clicking “Sign up”, I agree to cashbackbase's <a href="#">terms of service</a> and <a href="#">privacy statement</a> and I also agree that only open one account per person.</div>
-                        <div class="field">
-                            <p class="control">
-                                <button class="button is-success is-fullwidth">Sign Up</button>
-                            </p>
-                        </div>
+
                         <hr>
-                        <p>Already a member? <a href="./login.html">Login</a></p>
+                        <ul class="menu-list" style="margin-bottom: 50px;">
+                            <li><a class="is-active">Refund Deals</a></li>
+                            <li><a>Coupon Deals</a></li>
+                            <li><a>Seller Message</a></li>
+                            <li><a>My Points</a></li>
+                            <li><a>My Wishlist</a></li>
+                            <li><a>Account & Profile</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="column"><!-- RIGHT Column -->
+                    <div class="tabs">
+                        <ul>
+                          <li class="is-active"><a>ALL</a></li>
+                          <li><a>CONFIRMED</a></li>
+                          <li><a>UPLOADED ORDERS</a></li>
+                          <li><a>REFUNDED</a></li>
+                        </ul>
                     </div>
+                    <table class="table is-fullwidth is-narrow">
+                        <thead>
+                            <tr>
+                                <th>Deal Information</th>
+                                <th>Deal Process</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="card">
+                                <td>Petal-Shaped Foundation Brush, Foundation Makeup Brush, Suitable for Mixed Liquid,</td>
+                                <td>Canceled</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="column"></div>
-            <div class="column"></div>
         </div>
     </div>
 

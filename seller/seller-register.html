@@ -48,47 +48,93 @@
     </header> <!-- END OF NAVBAR -->
 
 
-    <!-- LOGIN -->
+    <!-- SELLER REGISTRATION -->
     <div class="container">
         <div class="columns">
             <div class="column" style="margin: 50px auto;">
                 <div class="card">
-                    <header class="card-header">
-                        <p class="card-header-title">Create a free account</p>
-                    </header>
+                    <h1 class="title is-4 has-text-centered" style="padding-top: 1.3rem;">Seller Portal</h1>
+                    <div class="tabs">
+                        <ul>
+                            <li><a href="./seller-login.html">I HAVE AN ACCOUNT</a></li>
+                            <li class="is-active"><a href="./seller-register.html">I'M A NEW SELLER</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Registration Form -->
                     <div class="card-content">
+                        <!-- Full Name -->
                         <div class="field">
-                            <label class="label">First Name</label>
+                            <label class="label">Name</label>
                             <div class="control">
-                              <input class="input" type="text" placeholder="First name">
+                              <input class="input" type="text" placeholder="Full name">
                             </div>
                         </div>
-                        <div class="field">
-                            <label class="label">Last Name</label>
-                            <div class="control">
-                              <input class="input" type="text" placeholder="Last name">
-                            </div>
-                        </div>
+
+                        <!-- Email -->
                         <div class="field">
                             <label class="label">Email</label>
                             <p class="control">
                                 <input class="input" type="email" placeholder="Email Address">
                             </p>
+                            <p class="help">To be verified</p>
                         </div>
+
+                        <!-- Company Name -->
+                        <div class="field">
+                            <label class="label">Company</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="Company Name">
+                            </div>
+                        </div>
+
+                        <!-- Amazon Store Link -->
+                        <div class="field">
+                            <label class="label">Amazon Store Link</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="http://www.amazon.com/shops/SHOPNAME">
+                            </div>
+                        </div>
+
+                        <!-- Website -->
+                        <div class="field">
+                            <label class="label">Website</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="Website URL">
+                            </div>
+                        </div>
+ 
+                        <!-- Phone Number -->
+                        <div class="field">
+                            <div class="label">Phone</div>
+                            <div class="field-body">
+                                <div class="field is-expanded">
+                                <div class="field has-addons">
+                                    <p class="control"><a class="button is-static">+91</a></p>
+                                    <p class="control is-expanded">
+                                        <input class="input" type="tel" placeholder="Your phone number">
+                                    </p>
+                                </div>
+                                <p class="help">To be verified</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <!-- Password -->
                         <div class="field">
                             <label class="label">Password</label>
                             <p class="control">
                                 <input class="input" type="password" placeholder="Password">
                             </p>
                         </div>
-                        <div class="is-size-7" style="margin-bottom: 12px;">By clicking “Sign up”, I agree to cashbackbase's <a href="#">terms of service</a> and <a href="#">privacy statement</a> and I also agree that only open one account per person.</div>
+                        <div class="is-size-7" style="margin-bottom: 12px;">By clicking “Sign up”, I agree to kashbackworld's <a href="#">terms of service</a> and <a href="#">privacy statement</a> and I also agree that only open one account per person.</div>
+                        
+                        <!-- Sign up Botton -->
                         <div class="field">
                             <p class="control">
                                 <button class="button is-success is-fullwidth">Sign Up</button>
                             </p>
                         </div>
-                        <hr>
-                        <p>Already a member? <a href="./login.html">Login</a></p>
                     </div>
                 </div>
             </div>

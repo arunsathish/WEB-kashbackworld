@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+
+    <!-- <link rel="stylesheet" href="../css/bulma/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <!-- Pricing Table -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/bulma-pricingtable/dist/css/bulma-pricingtable.min.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand"><!-- Brand Logo -->
+                    <a class="navbar-item" href="#">SELLER DASHBOARD</a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu"><!-- Navbar MENU -->
+                     <div class="navbar-start"><!-- RIGHT Navbar Menu -->
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Products </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="./product-all.html">Manage Product</a>
+                                <a class="navbar-item" href="./product-new.html">Add New Product</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Seller </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">Manage Seller</a>
+                                <a class="navbar-item">View Subsciption</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Deal Request </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="./deal-request-all.html">Manage Requests</a>
+                                <a class="navbar-item">Pending Requests</a>
+                                <a class="navbar-item">Rejected Requests</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">Confirmed Requests</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Customers </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">Manage Customers</a>
+                            </div>
+                        </div>
+
+                    </div>
+        
+                    <div class="navbar-end"> <!-- LEFT Navbar Menu -->
+                        <!-- <a class="navbar-item">Settings</a> -->
+                        <a class="navbar-item">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+       </nav>
+    </header><!-- End of HEADER SECTION -->
+
+    
+    <!-- VIEW ALL PRODUCTS -->
+    <div class="container my-6">
+        <h3 class="title is-3">Deal Requests</h3>
+        <table class="table is-fullwidth is-hoverable is-striped">
+            <thead>
+                <tr>
+                    <th>Deal ID</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Product ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><!-- Deal Request list -->
+                    <td><a href="./deal-request-view.html">301</a></td>
+                    <td>28 Feb 2020</td>
+                    <td>Pending</td>
+                    <td>EP2697J</td>
+                    <td><a href="#">1254</a></td>
+                    <td><a href="./product-view.html">101</a></td>
+                </tr>
+                <tr><!-- Deal Request list -->
+                    <td><a href="./deal-request-view.html">301</a></td>
+                    <td>28 Feb 2020</td>
+                    <td>Pending</td>
+                    <td>EP2697J</td>
+                    <td><a href="#">1254</a></td>
+                    <td><a href="./product-view.html">101</a></td>
+                </tr>
+                <tr><!-- Deal Request list -->
+                    <td><a href="./deal-request-view.html">301</a></td>
+                    <td>28 Feb 2020</td>
+                    <td>Pending</td>
+                    <td>EP2697J</td>
+                    <td><a href="#">1254</a></td>
+                    <td><a href="./product-view.html">101</a></td>
+                </tr>
+                <tr><!-- Deal Request list -->
+                    <td><a href="./deal-request-view.html">301</a></td>
+                    <td>28 Feb 2020</td>
+                    <td>Pending</td>
+                    <td>EP2697J</td>
+                    <td><a href="#">1254</a></td>
+                    <td><a href="./product-view.html">101</a></td>
+                </tr>
+                <tr><!-- Deal Request list -->
+                    <td><a href="./deal-request-view.html">301</a></td>
+                    <td>28 Feb 2020</td>
+                    <td>Pending</td>
+                    <td>EP2697J</td>
+                    <td><a href="#">1254</a></td>
+                    <td><a href="./product-view.html">101</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+</body>
+<script src="../js/bulma.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</html>

@@ -6,6 +6,7 @@
     <title>Get Latest Deals On Amazon | Kashbackworld</title>
 
     <link rel="stylesheet" href="../css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css">
 </head>
 <body>
 
@@ -25,19 +26,19 @@
                 
                   <div id="navbarBasicExample" class="navbar-menu">
                     <div class="navbar-start">
-                      <a class="navbar-item">FREEBIES</a>
+                      <!-- <a class="navbar-item">FREEBIES</a> -->
                       <a class="navbar-item">HOT DEALS</a>
                       <a class="navbar-item">EARN POINTS</a>
-                      <a class="navbar-item">NEW ARRIVAL</a>
-                      <a class="navbar-item">COUPON</a>
+                      <!-- <a class="navbar-item">NEW ARRIVAL</a> -->
+                      <!-- <a class="navbar-item">COUPON</a> -->
                       <a class="navbar-item">FAQ</a>
                     </div>
                 
                     <div class="navbar-end">
                       <div class="navbar-item">
                         <div class="buttons">
-                            <a class="button is-warning" href="./login.html">Log in</a>
-                            <a class="button is-success" href="./register.html">Join for Free</a>
+                            <a class="button is-warning" href="../login.html">Log in</a>
+                            <a class="button is-success" href="../register.html">Join for Free</a>
                         </div>
                       </div>
                     </div>
@@ -48,52 +49,57 @@
     </header> <!-- END OF NAVBAR -->
 
 
-    <!-- LOGIN -->
-    <div class="container">
-        <div class="columns">
-            <div class="column" style="margin: 50px auto;">
-                <div class="card">
-                    <header class="card-header">
-                        <p class="card-header-title">Create a free account</p>
-                    </header>
-                    <div class="card-content">
-                        <div class="field">
-                            <label class="label">First Name</label>
-                            <div class="control">
-                              <input class="input" type="text" placeholder="First name">
+    <!-- CUSTOMER DASHBOARD -->
+    <div class="container" style="margin: 40px auto; padding: 20px auto;">
+        <div class="card">
+            <div class="columns">
+                <div class="column is-one-quarter"><!-- LEFT Column -->
+                    <aside class="menu">
+                        <div class="has-text-centered">
+                            <div class="tile">
+                                <figure class="image is-128x128" style="margin: 0 auto;">
+                                    <img class="is-rounded" src="https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg">
+                                </figure>
                             </div>
+                            <span>yourname@example.com</span> <br>
+                            <span class="tag is-warning"><i class="fas fa-medal"></i>2500</span>
                         </div>
-                        <div class="field">
-                            <label class="label">Last Name</label>
-                            <div class="control">
-                              <input class="input" type="text" placeholder="Last name">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label">Email</label>
-                            <p class="control">
-                                <input class="input" type="email" placeholder="Email Address">
-                            </p>
-                        </div>
-                        <div class="field">
-                            <label class="label">Password</label>
-                            <p class="control">
-                                <input class="input" type="password" placeholder="Password">
-                            </p>
-                        </div>
-                        <div class="is-size-7" style="margin-bottom: 12px;">By clicking “Sign up”, I agree to cashbackbase's <a href="#">terms of service</a> and <a href="#">privacy statement</a> and I also agree that only open one account per person.</div>
-                        <div class="field">
-                            <p class="control">
-                                <button class="button is-success is-fullwidth">Sign Up</button>
-                            </p>
-                        </div>
+
                         <hr>
-                        <p>Already a member? <a href="./login.html">Login</a></p>
+                        <ul class="menu-list" style="margin-bottom: 50px;">
+                            <li><a href="./deal-request-all.html">Refund Deals</a></li>
+                            <!-- <li><a>Coupon Deals</a></li> -->
+                            <!-- <li><a>Seller Message</a></li> -->
+                            <li><a class="is-active" href="./my-points.html">My Points</a></li>
+                            <!-- <li><a>My Wishlist</a></li> -->
+                            <li><a href="./account-my-profile.html">Account & Profile</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="column"><!-- RIGHT Column -->
+                    <h4 class="title is-4">Points Overview</h4>
+                    <div class="box">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <div>
+                                    <p class="title is-4 has-background-warning">2500</p>
+                                    <p class="heading" style="margin-top: 5px;">
+                                        <span class="has-tooltip-bottom has-tooltip-multiline" data-tooltip="Those points can be used currently to get the quota for purchasing products. It will expire when you don’t sign in within 7 days.">Available Points</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="level-item has-text-centered">
+                                <div>
+                                    <p class="title is-4 has-background-warning">0</p>
+                                    <p class="heading" style="margin-top: 5px;">
+                                        <span class="has-tooltip-bottom has-tooltip-multiline" data-tooltip="Your points will be frozen when you request a deal by clicking the Deal request on Product Details page. These points will be unfrozen when the deal expires or is canceled. If you submit the Amazon order info, these points will be deducted.">Frozen Points</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
-            <div class="column"></div>
-            <div class="column"></div>
         </div>
     </div>
 
@@ -142,7 +148,8 @@
                 </div>
                 <div class="column">
                     HELPFUL LINKS
-                    <p>Second column</p>
+                    <p><a href="../seller-register.html">Seller Central</a></p>
+                    <p><a href="../admin/deal-request-all.html">Admin Central</a></p>
                   
                 </div>
                 <div class="column">

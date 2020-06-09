@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Latest Deals On Amazon | Kashbackworld</title>
 
-    <!-- <link rel="stylesheet" href="../css/bulma/css/bulma.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css">
 </head>
 <body>
 
@@ -67,69 +67,50 @@
 
                         <hr>
                         <ul class="menu-list" style="margin-bottom: 50px;">
-                            <li><a class="is-active">Refund Deals</a></li>
+                            <li><a href="./deal-request-all.html">Refund Deals</a></li>
                             <!-- <li><a>Coupon Deals</a></li> -->
                             <!-- <li><a>Seller Message</a></li> -->
                             <li><a href="./my-points.html">My Points</a></li>
                             <!-- <li><a>My Wishlist</a></li> -->
-                            <li><a href="./account-my-profile.html">Account & Profile</a></li>
+                            <li><a class="is-active">Account & Profile</a></li>
                         </ul>
                     </aside>
                 </div>
                 <div class="column"><!-- RIGHT Column -->
+                    <h4 class="title is-4">My Account</h4>
                     <div class="tabs">
                         <ul>
-                          <li class="is-active"><a>ALL</a></li>
-                          <li><a>CONFIRMED</a></li>
-                          <li><a>UPLOADED ORDERS</a></li>
-                          <li><a>REFUNDED</a></li>
+                          <li><a href="./account-my-profile.html">My Profile</a></li>
+                          <li><a href="./account-amazon-profile.html">Amazon Profile URL</a></li>
+                          <li class="is-active"><a href="./account-paypal-account.html">PayPal Account</a></li>
+                          <!-- <li><a href="./account-change-password.html">Change Password</a></li> -->
                         </ul>
                     </div>
-                    <table class="table is-fullwidth is-narrow">
-                        <thead>
-                            <tr>
-                                <th class="has-text-centered">Deal Information</th>
-                                <th>Status</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="card">
-                                <td style="padding: 1.3rem;">
-                                    <div class="media">
-                                        <div class="media-left">
-                                          <figure class="image is-48x48">
-                                            <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-1_large.png?format=webp&v=1530129113" alt="Placeholder image">
-                                          </figure>
-                                        </div>
-                                        <div class="media-content">
-                                            <p class="title is-6" style="margin-bottom: 10px;">Petal-Shaped Foundation Brush, Foundation Makeup Brush, Suitable for Mixed Liquid,</p>
-                                            <table class="table is-bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <td class="has-text-centered">Deal ID</td>
-                                                        <td class="has-text-centered">Price</td>
-                                                        <td class="has-text-centered">Cashback</td>
-                                                        <td class="has-text-centered">Points</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="has-text-centered">301</th>
-                                                        <th class="has-text-centered">123</th>
-                                                        <th class="has-text-centered">Rs.200</th>
-                                                        <th class="has-text-centered">100</th>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="py-4">Pending</td>
-                                <td style="padding: 1.3rem;"><button class="button is-info is-light">Upload Details</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <form > <!-- PayPal Account Email - Form -->
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                              <label class="label">Paypal Account:</label>
+                            </div>
+                            <div class="field-body">
+                              <div class="field">
+                                <p class="control is-expanded">
+                                  <input class="input" type="text" placeholder="Paypal Account Email:">
+                                </p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-label"><!-- Left empty for spacing --></div>
+                            <div class="field-body">
+                              <div class="field">
+                                <div class="control">
+                                  <button class="button is-primary">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>

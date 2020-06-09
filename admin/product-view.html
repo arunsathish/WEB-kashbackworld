@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+
+    <!-- <link rel="stylesheet" href="../css/bulma/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <!-- Pricing Table -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/bulma-pricingtable/dist/css/bulma-pricingtable.min.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand"><!-- Brand Logo -->
+                    <a class="navbar-item" href="#">SELLER DASHBOARD</a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu"><!-- Navbar MENU -->
+                     <div class="navbar-start"><!-- RIGHT Navbar Menu -->
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Products </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="./product-all.html">Manage Product</a>
+                                <a class="navbar-item" href="./product-new.html">Add New Product</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Seller </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">Manage Seller</a>
+                                <a class="navbar-item">View Subsciption</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                          <a class="navbar-link"> Deal Request </a>
+                          <div class="navbar-dropdown">
+                              <a class="navbar-item" href="./deal-request-all.html">Manage Requests</a>
+                              <a class="navbar-item">Pending Requests</a>
+                              <a class="navbar-item">Rejected Requests</a>
+                              <hr class="navbar-divider">
+                              <a class="navbar-item">Confirmed Requests</a>
+                          </div>
+                      </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Customers </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">Manage Customers</a>
+                            </div>
+                        </div>
+
+                    </div>
+        
+                    <div class="navbar-end"> <!-- LEFT Navbar Menu -->
+                        <!-- <a class="navbar-item">Settings</a> -->
+                        <a class="navbar-item">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+       </nav>
+    </header><!-- End of HEADER SECTION -->
+
+    
+    <!-- ADD NEW PRODUCTS -->
+    <div class="container my-6">
+        <!-- Product Title -->
+        <h4 class="title is-4">Ultrasonic Pest Repeller 6 Pack</h4>
+        <figure class="image is-128x128">
+            <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-2_large.png?format=webp&v=1530129132">
+        </figure>
+        <!-- Product Pricing -->
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <h5 class="title is-5">Price</h5>
+                    <p class="title is-4"> <span style="color: hsl(48, 100%, 30%)">Rs.100</span>  <strike style="font-size: 1.2rem; font-weight: normal;">Rs.400</strike></p>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+        <!-- Product Points -->
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <h5 class="title is-5">Points</h5>
+                    <p class="title is-4 has-text-success">+350</p>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+        <div class="box">
+            <h6 class="title is-5">Description</h6>
+            <p>The bright and vibrant colors produced by the creamy tempera paint sticks dries quickly—just 90 seconds! Each box contains 24 count, 12 Classic 6 Neon & 6 Metallic Colors.
+                Easy for use: These paint sticks glide as smooth as silk, the small round barrel is easy for kids to hold. And the twistable body is just like the lipstick and will not break easily. No water and brush needed ,kids just need twist the crayons to raise it up and start painting.
+                SAFE, NON TOXIC & HYPOALLERGENIC -- With environmentally friendly materials, MayMoi tempera paints are safe, non toxic, hypoallergenic—perfect for kids, teens and adults. Packaged in a durable carrying case, it's the best art gift for your favorite artist.
+                Quick-drying and Washable: Quick-drying formula helps paint to dry in 90 seconds, means no smears and smudges. These paint sticks are washable and can be cleaned with soap water easily ,no longer worry about any paint sticks .
+                Perfect For Face and Body Painting -- Our paint crayon sticks will not irritate your child's skin and can be used as face and body paint crayons, so kids and adults can enjoy them for parties or games.
+            </p>
+        </div>
+
+        <!-- Submit -->
+        <div class="field">
+          <div class="control">
+            <a class="button is-success" href="./product-new.html">Edit</a>
+            <button class="button is-danger">Delete</button>
+          </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+<script src="../js/bulma.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</html>

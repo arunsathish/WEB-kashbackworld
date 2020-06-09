@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+
+    <!-- <link rel="stylesheet" href="../css/bulma/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <!-- Pricing Table -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/bulma-pricingtable/dist/css/bulma-pricingtable.min.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand"><!-- Brand Logo -->
+                    <a class="navbar-item" href="#">SELLER DASHBOARD</a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu"><!-- Navbar MENU -->
+                     <div class="navbar-start"><!-- RIGHT Navbar Menu -->
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Products </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="./product-all.html">Manage Product</a>
+                                <a class="navbar-item" href="./product-new.html">Add New Product</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Seller </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">Manage Seller</a>
+                                <a class="navbar-item">View Subsciption</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                          <a class="navbar-link"> Deal Request </a>
+                          <div class="navbar-dropdown">
+                              <a class="navbar-item" href="./deal-request-all.html">Manage Requests</a>
+                              <a class="navbar-item">Pending Requests</a>
+                              <a class="navbar-item">Rejected Requests</a>
+                              <hr class="navbar-divider">
+                              <a class="navbar-item">Confirmed Requests</a>
+                          </div>
+                      </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Customers </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">Manage Customers</a>
+                            </div>
+                        </div>
+
+                    </div>
+        
+                    <div class="navbar-end"> <!-- LEFT Navbar Menu -->
+                        <!-- <a class="navbar-item">Settings</a> -->
+                        <a class="navbar-item">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+       </nav>
+    </header><!-- End of HEADER SECTION -->
+
+    
+    <!-- ADD NEW PRODUCTS -->
+    <div class="container my-6">
+        <h3 class="title is-3">Add New Product</h3>
+        <!-- Add Product Image -->
+        <div class="file has-name">
+            <label class="file-label">
+              <input class="file-input" type="file" name="resume">
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label">
+                  Add Product Image
+                </span>
+              </span>
+              <span class="file-name">
+                Screen Shot 2017-07-29 at 15.54.25.png
+              </span>
+            </label>
+        </div>
+        <!-- Product Title -->
+        <div class="field mt-3">
+            <label class="label">Product Title</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Product Title">
+            </div>
+        </div>
+        <!-- Regular Price -->
+        <div class="columns">
+            <div class="column">
+                <div class="field">
+                    <label class="label">Regular Price</label>
+                    <div class="field-body">
+                      <div class="field is-expanded">
+                        <div class="field has-addons">
+                          <p class="control"><a class="button is-static">INR</a></p>
+                          <p class="control is-expanded">
+                            <input class="input" type="number" placeholder="Regular Price which will be Striked">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+        <!-- Selling Price -->
+        <div class="columns">
+            <div class="column">
+                <div class="field">
+                    <label class="label">Selling Price</label>
+                    <div class="field-body">
+                      <div class="field is-expanded">
+                        <div class="field has-addons">
+                          <p class="control"><a class="button is-static">INR</a></p>
+                          <p class="control is-expanded">
+                            <input class="input" type="number" placeholder="Selling Price">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+        <!-- Product Points -->
+        <div class="columns">
+            <div class="column">
+                <div class="field">
+                    <label class="label">Product Points</label>
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="number" placeholder="Product Point">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+        <!-- Product Description -->
+        <div class="field">
+            <label class="label">Description</label>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea" placeholder="Product Description"></textarea>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Submit -->
+        <div class="field">
+          <div class="control">
+            <button class="button is-danger">Submit</button>
+          </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+<script src="../js/bulma.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</html>

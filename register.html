@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Latest Deals On Amazon | Kashbackworld</title>
 
-    <link rel="stylesheet" href="../css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/bulma/css/bulma.min.css">
 </head>
 <body>
 
@@ -14,7 +14,7 @@
         <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
             <div class="container">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="../index.html"> <strong>KASHBACKWORLD</strong> </a>
+                    <a class="navbar-item" href="./index.html"> <strong>KASHBACKWORLD</strong> </a>
                 
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                       <span aria-hidden="true"></span>
@@ -25,11 +25,11 @@
                 
                   <div id="navbarBasicExample" class="navbar-menu">
                     <div class="navbar-start">
-                      <a class="navbar-item">FREEBIES</a>
+                      <!-- <a class="navbar-item">FREEBIES</a> -->
                       <a class="navbar-item">HOT DEALS</a>
                       <a class="navbar-item">EARN POINTS</a>
-                      <a class="navbar-item">NEW ARRIVAL</a>
-                      <a class="navbar-item">COUPON</a>
+                      <!-- <a class="navbar-item">NEW ARRIVAL</a> -->
+                      <!-- <a class="navbar-item">COUPON</a> -->
                       <a class="navbar-item">FAQ</a>
                     </div>
                 
@@ -48,44 +48,47 @@
     </header> <!-- END OF NAVBAR -->
 
 
-    <!-- SELLER LOGIN -->
+    <!-- REGISTRATION -->
     <div class="container">
         <div class="columns">
             <div class="column" style="margin: 50px auto;">
                 <div class="card">
-                    <h1 class="title is-4 has-text-centered" style="padding-top: 1.3rem;">Seller Portal</h1>
-                    <div class="tabs">
-                        <ul>
-                            <li class="is-active"><a href="./seller-login.html">I HAVE AN ACCOUNT</a></li>
-                            <li><a href="./seller-register.html">I'M A NEW SELLER</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Registration Form -->
+                    <header class="card-header">
+                        <p class="card-header-title">Create a free account</p>
+                    </header>
                     <div class="card-content">
-
-                        <!-- Email -->
+                        <div class="field">
+                            <label class="label">First Name</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="First name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Last Name</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="Last name">
+                            </div>
+                        </div>
                         <div class="field">
                             <label class="label">Email</label>
                             <p class="control">
                                 <input class="input" type="email" placeholder="Email Address">
                             </p>
                         </div>
-
-                        <!-- Password -->
                         <div class="field">
                             <label class="label">Password</label>
                             <p class="control">
                                 <input class="input" type="password" placeholder="Password">
                             </p>
                         </div>
-                        
-                        <!-- Sign up Botton -->
+                        <div class="is-size-7" style="margin-bottom: 12px;">By clicking “Sign up”, I agree to cashbackbase's <a href="#">terms of service</a> and <a href="#">privacy statement</a> and I also agree that only open one account per person.</div>
                         <div class="field">
                             <p class="control">
-                                <button class="button is-success is-fullwidth">Sign Up</button>
+                                <a class="button is-success is-fullwidth" href="./account/deal-request-all.html">Sign Up</a>
                             </p>
                         </div>
+                        <hr>
+                        <p>Already a member? <a href="./login.html">Login</a></p>
                     </div>
                 </div>
             </div>
@@ -139,7 +142,8 @@
                 </div>
                 <div class="column">
                     HELPFUL LINKS
-                    <p>Second column</p>
+                    <p><a href="./seller-register.html">Seller Central</a></p>
+                    <p><a href="./admin/deal-request-all.html">Admin Central</a></p>
                   
                 </div>
                 <div class="column">
@@ -165,7 +169,7 @@
 
 </body>
 
-<script src="../js/bulma.js"></script>
+<script src="./js/bulma.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
 </html>

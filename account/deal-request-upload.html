@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Latest Deals On Amazon | Kashbackworld</title>
 
-    <link rel="stylesheet" href="../css/bulma/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="../css/bulma/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 </head>
 <body>
 
@@ -76,22 +77,8 @@
                     </aside>
                 </div>
                 <div class="column"><!-- RIGHT Column -->
-                    <div class="tabs">
-                        <ul>
-                          <li class="is-active"><a>ALL</a></li>
-                          <li><a>CONFIRMED</a></li>
-                          <li><a>UPLOADED ORDERS</a></li>
-                          <li><a>REFUNDED</a></li>
-                        </ul>
-                    </div>
+                    <a class="button is-danger is-light" href="./deal-request-all.html">Back</a>
                     <table class="table is-fullwidth is-narrow">
-                        <thead>
-                            <tr>
-                                <th class="has-text-centered">Deal Information</th>
-                                <th>Deal Process</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
                         <tbody>
                             <tr class="card">
                                 <td style="padding: 1.3rem;">
@@ -124,11 +111,27 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td style="padding: 1.3rem;">Canceled</td>
-                                <td style="padding: 1.3rem;"><button class="button is-info is-light">Upload Details</button></td>
                             </tr>
                         </tbody>
                     </table>
+                    <!-- Upload Amazon Order ID -->
+                    <div class="field">
+                        <label class="label">Amazon Order ID</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Amazon Order ID">
+                        </div>
+                    </div>
+                    <!-- Upload Order Screenshot -->
+                    <div class="file has-name mt-5">
+                        <label class="file-label">
+                          <input class="file-input" type="file" name="resume">
+                          <span class="file-cta">
+                            <span class="file-icon"><i class="fas fa-upload"></i></span>
+                            <span class="file-label">Upload Order Screenshot</span>
+                          </span>
+                          <span class="file-name">Screen Shot 2017-07-29 at 15.54.25.png</span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>

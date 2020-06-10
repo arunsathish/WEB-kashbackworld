@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Portal</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/octoshrimpy/bulma-o-steps/master/bulma-steps.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand"><!-- Brand Logo -->
+                    <a class="navbar-item" href="#">SELLER DASHBOARD</a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu"><!-- Navbar MENU -->
+                    <div class="navbar-start"><!-- RIGHT Navbar Menu -->
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Products </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="./product-all.html">Manage Products</a>
+                                <a class="navbar-item">Add New Products</a>
+                            </div>
+                        </div>
+                        <a class="navbar-item">Stores</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Cashback </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">Campaigns</a>
+                                <a class="navbar-item">Requests</a>
+                                <a class="navbar-item">Orders</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">Closure Application Orders</a>
+                            </div>
+                        </div>
+                        <a class="navbar-item" href="./subscription.html">Subscription</a>
+                    </div>
+        
+                    <div class="navbar-end"> <!-- LEFT Navbar Menu -->
+                        <a class="navbar-item">Settings</a>
+                        <a class="navbar-item">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+       </nav>
+    </header><!-- End of HEADER SECTION -->
+
+
+    <!-- PROCESS OF ADDING PRODUCT -->
+    <div class="container my-6">
+        <!-- STEPS -->
+        <ul class="steps is-narrow is-medium is-centered has-content-centered">
+            <!-- Step 1 - STORE -->
+            <li class="steps-segment is-active has-gaps">
+                <a href="./new-product-all-store.html" class="has-text-dark">
+                    <span class="steps-marker">
+                    <span class="icon">
+                        <i class="fa fa-shopping-basket"></i>
+                    </span>
+                    </span>
+                    <div class="steps-content">
+                    <p class="heading">Select Store</p>
+                    </div>
+                </a>
+            </li>
+            <!-- Step 2 - PRODUCT -->
+            <li class="steps-segment">
+                <a href="./new-product-all.html" class="has-text-dark">
+                    <span class="steps-marker">
+                    <span class="icon">
+                        <i class="fa fa-shopping-basket"></i>
+                    </span>
+                    </span>
+                    <div class="steps-content">
+                    <p class="heading">Products</p>
+                    </div>
+                </a>
+            </li>
+            <!-- Step 3 - CHECK OUT -->
+            <li class="steps-segment">
+                <a href="./new-product-checkout.html" class="has-text-dark">
+                    <span class="steps-marker">
+                        <span class="icon">
+                        <i class="fa fa-shopping-cart"></i>
+                        </span>
+                    </span>
+                    <div class="steps-content">
+                        <p class="heading">Check Out</p>
+                    </div>
+                </a>
+            </li>
+            <!-- Step 4 - PAYMENT -->
+            <li class="steps-segment">
+                <a href="./new-product-payment.html" class="has-text-dark">
+                    <span class="steps-marker is-hollow">
+                        <span class="icon">
+                        <i class="fa fa-money-bill"></i>
+                        </span>
+                    </span>
+                    <div class="steps-content">
+                        <p class="heading">Payment</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    
+        <!-- Section - SUBSCIPTION -->
+        <div class="columns">
+            <div class="column is-half" style="margin: 0 auto;">
+                <div class="box"><!-- Card -->
+                    <div class="card-content">
+                        <!-- Amazon Store Link -->
+                        <h3 class="title is-3 has-text-centered">Add Store</h3>
+                        <div class="field">
+                            <label class="label">Amazon Store Link</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="http://www.amazon.com/shops/SHOPNAME">
+                            </div>
+                        </div>
+                        <div class="has-text-right">
+                            <button class="button is-text">back</button>
+                            <a class="button is-info" href="./new-product-all-store.html">Add Store</a>
+                        </div>
+                    </div>
+                </div><!-- Card -->
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+<script src="../js/bulma.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</html>

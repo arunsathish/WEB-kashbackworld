@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Portal</title>
 
-    <link rel="stylesheet" href="../css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/octoshrimpy/bulma-o-steps/master/bulma-steps.css">
 </head>
 <body>
@@ -24,8 +24,15 @@
                 </div>
               
                 <div id="navbarBasicExample" class="navbar-menu"><!-- Navbar MENU -->
-                     <div class="navbar-start"><!-- RIGHT Navbar Menu -->
-                        <a class="navbar-item">Store</a>
+                    <div class="navbar-start"><!-- RIGHT Navbar Menu -->
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Products </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="./product-all.html">Manage Products</a>
+                                <a class="navbar-item">Add New Products</a>
+                            </div>
+                        </div>
+                        <a class="navbar-item">Stores</a>
                         <div class="navbar-item has-dropdown is-hoverable">
                             <a class="navbar-link"> Cashback </a>
                             <div class="navbar-dropdown">
@@ -36,22 +43,7 @@
                                 <a class="navbar-item">Closure Application Orders</a>
                             </div>
                         </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link"> Coupon </a>
-                            <div class="navbar-dropdown">
-                                <a class="navbar-item">Campaigns</a>
-                                <a class="navbar-item">Usage</a>
-                            </div>
-                        </div>
-                        <a class="navbar-item">Message</a>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link"> Payment </a>
-                            <div class="navbar-dropdown">
-                                <a class="navbar-item">Subscription</a>
-                                <a class="navbar-item">Security Deposit</a>
-                            </div>
-                        </div>
-                        <a class="navbar-item">Tools</a>
+                        <a class="navbar-item" href="./subscription.html">Subscription</a>
                     </div>
         
                     <div class="navbar-end"> <!-- LEFT Navbar Menu -->
@@ -66,12 +58,12 @@
 
 
     <!-- PROCESS OF ADDING PRODUCT -->
-    <div class="container" style="margin: 40px auto;">
+    <div class="container my-6">
         <!-- STEPS -->
         <ul class="steps is-narrow is-medium is-centered has-content-centered">
             <!-- Step 1 - STORE -->
             <li class="steps-segment">
-                <a href="./subscription-store.html" class="has-text-dark">
+                <a href="./new-product-all-store.html" class="has-text-dark">
                     <span class="steps-marker">
                     <span class="icon">
                         <i class="fa fa-shopping-basket"></i>
@@ -83,8 +75,8 @@
                 </a>
             </li>
             <!-- Step 2 - PRODUCT -->
-            <li class="steps-segment">
-                <a href="./subscription-product.html" class="has-text-dark">
+            <li class="steps-segment is-active has-gaps">
+                <a href="./new-product-all.html" class="has-text-dark">
                     <span class="steps-marker">
                     <span class="icon">
                         <i class="fa fa-shopping-basket"></i>
@@ -96,8 +88,8 @@
                 </a>
             </li>
             <!-- Step 3 - CHECK OUT -->
-            <li class="steps-segment is-active has-gaps">
-                <a href="./subscription-checkout.html" class="has-text-dark">
+            <li class="steps-segment">
+                <a href="./new-product-checkout.html" class="has-text-dark">
                     <span class="steps-marker">
                         <span class="icon">
                         <i class="fa fa-shopping-cart"></i>
@@ -110,7 +102,7 @@
             </li>
             <!-- Step 4 - PAYMENT -->
             <li class="steps-segment">
-                <a href="./subscription-payment.html" class="has-text-dark">
+                <a href="./new-product-payment.html" class="has-text-dark">
                     <span class="steps-marker is-hollow">
                         <span class="icon">
                         <i class="fa fa-money-bill"></i>
@@ -129,36 +121,54 @@
             <div class="column is-half" style="margin: 0 auto;">
                 <div class="box"><!-- Card -->
                     <div class="card-content">
+                        <h5 class="title is-5 has-text-centered">Add Product</h5>
                         <!-- Product link URL -->
-                        <h3 class="title is-3 has-text-centered">Check Out</h3>
-                        <table class="table is-fullwidth">
-                            <thead>
-                                <tr>
-                                    <th class="has-text-centered">Description</th>
-                                    <th class="has-text-centered">Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Subscription</td>
-                                    <td class="has-text-right">Rs.7,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Product</td>
-                                    <td class="has-text-right">Rs.10,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Sub Total</td>
-                                    <td class="has-text-right">Rs.10,000</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th></th>
-                                    <th class="has-text-right">Total: Rs.27,000</th>
-                                </tr>
-                            </tfoot>
-                        </table>
+                        <div class="field">
+                            <label class="label">Product Link</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="Product Link URL">
+                            </div>
+                        </div>
+                        <!-- Online selling price -->
+                        <div class="field">
+                            <div class="label">Online Selling Price</div>
+                            <div class="field-body">
+                                <div class="field is-expanded">
+                                <div class="field has-addons">
+                                    <p class="control"><a class="button is-static">INR</a></p>
+                                    <p class="control is-expanded">
+                                        <input class="input" type="number" placeholder="Online Sell Price">
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Discounted Price -->
+                        <div class="field">
+                            <div class="label">Discounted Price</div>
+                            <div class="field-body">
+                                <div class="field is-expanded">
+                                <div class="field has-addons">
+                                    <p class="control"><a class="button is-static">INR</a></p>
+                                    <p class="control is-expanded">
+                                        <input class="input" type="number" placeholder="Discounted Price">
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Quantities -->
+                        <div class="field">
+                            <label class="label">Quantity</label>
+                            <p class="control">
+                                <input class="input" type="number" placeholder="Number of Products">
+                            </p>
+                        </div>
+                        <!-- Submit Button Add Product  -->
+                        <div class="has-text-right">
+                            <a class="button is-text" href="">Cancel</a>
+                            <a class="button is-info" href="./new-product-all.html">ADD PRODUCT</a>
+                        </div>
                     </div>
                 </div><!-- Card -->
             </div>

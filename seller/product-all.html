@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Portal</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <!-- Pricing Table -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/bulma-pricingtable/dist/css/bulma-pricingtable.min.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand"><!-- Brand Logo -->
+                    <a class="navbar-item" href="#">SELLER DASHBOARD</a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu"><!-- Navbar MENU -->
+                    <div class="navbar-start"><!-- RIGHT Navbar Menu -->
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Products </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="./product-all.html">Manage Products</a>
+                                <a class="navbar-item">Add New Products</a>
+                            </div>
+                        </div>
+                        <a class="navbar-item">Stores</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Cashback </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">Campaigns</a>
+                                <a class="navbar-item">Requests</a>
+                                <a class="navbar-item">Orders</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">Closure Application Orders</a>
+                            </div>
+                        </div>
+                        <a class="navbar-item" href="./subscription.html">Subscription</a>
+                    </div>
+        
+                    <div class="navbar-end"> <!-- LEFT Navbar Menu -->
+                        <a class="navbar-item">Settings</a>
+                        <a class="navbar-item">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+       </nav>
+    </header><!-- End of HEADER SECTION -->
+
+    
+
+    <!-- VIEW ALL PRODUCTS -->
+    <div class="container my-6">
+        <h3 class="title is-3">Manage Products</h3>
+        <a href="./new-product-all-store.html" class="button mb-3 has-text-right">Add New Product</a>
+        <table class="table is-fullwidth is-hoverable is-striped">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product URL</th>
+                    <th>Status</th>
+                    <th>Regular Price</th>
+                    <th>Discounted Price</th>
+                    <th>Modify</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><!-- product list -->
+                    <td>101</td>
+                    <td><a href="#">https://www.amazon.in/PRODUCT-ID</a></td>
+                    <td>Processing</td>
+                    <td>Rs.300</td>
+                    <td>Rs.200</td>
+                    <td><a class="button is-danger is-light is-small" href="#">Edit</a></td>
+                </tr>
+                <tr><!-- product list -->
+                    <td>101</td>
+                    <td><a href="#">https://www.amazon.in/PRODUCT-ID</a></td>
+                    <td>Live</td>
+                    <td>Rs.300</td>
+                    <td>Rs.200</td>
+                    <td><a class="button is-danger is-light is-small" href="#">Edit</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+</body>
+<script src="../js/bulma.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</html>

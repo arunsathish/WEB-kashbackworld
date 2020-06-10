@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Portal</title>
 
-    <link rel="stylesheet" href="../css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/octoshrimpy/bulma-o-steps/master/bulma-steps.css">
 </head>
 <body>
@@ -24,8 +24,15 @@
                 </div>
               
                 <div id="navbarBasicExample" class="navbar-menu"><!-- Navbar MENU -->
-                     <div class="navbar-start"><!-- RIGHT Navbar Menu -->
-                        <a class="navbar-item">Store</a>
+                    <div class="navbar-start"><!-- RIGHT Navbar Menu -->
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link"> Products </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="./product-all.html">Manage Products</a>
+                                <a class="navbar-item">Add New Products</a>
+                            </div>
+                        </div>
+                        <a class="navbar-item">Stores</a>
                         <div class="navbar-item has-dropdown is-hoverable">
                             <a class="navbar-link"> Cashback </a>
                             <div class="navbar-dropdown">
@@ -36,22 +43,7 @@
                                 <a class="navbar-item">Closure Application Orders</a>
                             </div>
                         </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link"> Coupon </a>
-                            <div class="navbar-dropdown">
-                                <a class="navbar-item">Campaigns</a>
-                                <a class="navbar-item">Usage</a>
-                            </div>
-                        </div>
-                        <a class="navbar-item">Message</a>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link"> Payment </a>
-                            <div class="navbar-dropdown">
-                                <a class="navbar-item">Subscription</a>
-                                <a class="navbar-item">Security Deposit</a>
-                            </div>
-                        </div>
-                        <a class="navbar-item">Tools</a>
+                        <a class="navbar-item" href="./subscription.html">Subscription</a>
                     </div>
         
                     <div class="navbar-end"> <!-- LEFT Navbar Menu -->
@@ -66,72 +58,72 @@
 
 
     <!-- PROCESS OF ADDING PRODUCT -->
-    <div class="container" style="margin: 40px auto;">
+    <div class="container my-6">
         <!-- STEPS -->
         <ul class="steps is-narrow is-medium is-centered has-content-centered">
-          <!-- Step 1 - STORE -->
-          <li class="steps-segment">
-              <a href="./subscription-store.html" class="has-text-dark">
-                  <span class="steps-marker">
-                  <span class="icon">
-                      <i class="fa fa-shopping-basket"></i>
-                  </span>
-                  </span>
-                  <div class="steps-content">
-                  <p class="heading">Select Store</p>
-                  </div>
-              </a>
-          </li>
-          <!-- Step 2 - PRODUCT -->
-          <li class="steps-segment is-active has-gaps">
-              <a href="./subscription-product.html" class="has-text-dark">
-                  <span class="steps-marker">
-                  <span class="icon">
-                      <i class="fa fa-shopping-basket"></i>
-                  </span>
-                  </span>
-                  <div class="steps-content">
-                  <p class="heading">Products</p>
-                  </div>
-              </a>
-          </li>
-          <!-- Step 3 - CHECK OUT -->
-          <li class="steps-segment">
-              <a href="./subscription-checkout.html" class="has-text-dark">
-                  <span class="steps-marker">
-                      <span class="icon">
-                      <i class="fa fa-shopping-cart"></i>
-                      </span>
-                  </span>
-                  <div class="steps-content">
-                      <p class="heading">Check Out</p>
-                  </div>
-              </a>
-          </li>
-          <!-- Step 4 - PAYMENT -->
-          <li class="steps-segment">
-              <a href="./subscription-payment.html" class="has-text-dark">
-                  <span class="steps-marker is-hollow">
-                      <span class="icon">
-                      <i class="fa fa-money-bill"></i>
-                      </span>
-                  </span>
-                  <div class="steps-content">
-                      <p class="heading">Payment</p>
-                  </div>
-              </a>
-          </li>
-      </ul>
+            <!-- Step 1 - STORE -->
+            <li class="steps-segment">
+                <a href="./new-product-all-store.html" class="has-text-dark">
+                    <span class="steps-marker">
+                    <span class="icon">
+                        <i class="fa fa-shopping-basket"></i>
+                    </span>
+                    </span>
+                    <div class="steps-content">
+                    <p class="heading">Select Store</p>
+                    </div>
+                </a>
+            </li>
+            <!-- Step 2 - PRODUCT -->
+            <li class="steps-segment is-active has-gaps">
+                <a href="./new-product-all.html" class="has-text-dark">
+                    <span class="steps-marker">
+                    <span class="icon">
+                        <i class="fa fa-shopping-basket"></i>
+                    </span>
+                    </span>
+                    <div class="steps-content">
+                    <p class="heading">Products</p>
+                    </div>
+                </a>
+            </li>
+            <!-- Step 3 - CHECK OUT -->
+            <li class="steps-segment">
+                <a href="./new-product-checkout.html" class="has-text-dark">
+                    <span class="steps-marker">
+                        <span class="icon">
+                        <i class="fa fa-shopping-cart"></i>
+                        </span>
+                    </span>
+                    <div class="steps-content">
+                        <p class="heading">Check Out</p>
+                    </div>
+                </a>
+            </li>
+            <!-- Step 4 - PAYMENT -->
+            <li class="steps-segment">
+                <a href="./new-product-payment.html" class="has-text-dark">
+                    <span class="steps-marker is-hollow">
+                        <span class="icon">
+                        <i class="fa fa-money-bill"></i>
+                        </span>
+                    </span>
+                    <div class="steps-content">
+                        <p class="heading">Payment</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
 
     
-        <!-- Section - SUBSCIPTION -->
+        <!-- Section - All Products -->
         <div class="columns">
-            <div class="column is-two-thirds" style="margin: 0 auto;">
+            <div class="column is-four-fifths" style="margin: 0 auto;">
                 <div class="box"><!-- Card -->
                     <div class="card-content">
                         <!-- Product link URL -->
                         <h3 class="title is-3 has-text-centered">Products</h3>
-                        <a href="./subscription-addproduct.html" class="button">Add Product</a>
+                        <a href="./new-product-add.html" class="button">Add Product</a>
                         <table class="table is-fullwidth">
                             <thead>
                                 <tr>
@@ -139,6 +131,7 @@
                                     <th class="has-text-centered">Product URL</th>
                                     <th class="has-text-centered">Regular Price</th>
                                     <th class="has-text-centered">Discounted Price</th>
+                                    <th class="has-text-centered">Quantity</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -147,18 +140,21 @@
                                     <td>https://www.amazon.in/PRODUCT-ID</td>
                                     <td class="has-text-right">Rs.10,000</td>
                                     <td class="has-text-right">Rs.8,000</td>
+                                    <td class="has-text-right">5</td>
                                 </tr>
                                 <tr>
-                                    <td>02</td>
-                                    <td>https://www.amazon.in/PRODUCT-ID</td>
-                                    <td class="has-text-right">Rs.90,000</td>
-                                    <td class="has-text-right">Rs.70,000</td>
-                                </tr>
-                                <tr>
-                                    <td>03</td>
+                                    <td>01</td>
                                     <td>https://www.amazon.in/PRODUCT-ID</td>
                                     <td class="has-text-right">Rs.10,000</td>
                                     <td class="has-text-right">Rs.8,000</td>
+                                    <td class="has-text-right">5</td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>https://www.amazon.in/PRODUCT-ID</td>
+                                    <td class="has-text-right">Rs.10,000</td>
+                                    <td class="has-text-right">Rs.8,000</td>
+                                    <td class="has-text-right">5</td>
                                 </tr>
                             </tbody>
                         </table>
